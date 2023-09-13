@@ -4,7 +4,11 @@ import prisma from "../../../lib/prisma";
 
 export async function GET() {
   try {
-    const trades = await prisma.trade.findMany();
+    const trades = await prisma.trade.findMany({
+      orderBy: {
+        tradingDate: "asc",
+      },
+    });
     return NextResponse.json({ trades }, { status: 200 });
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500 });
