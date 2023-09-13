@@ -9,3 +9,9 @@ datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
 }
+
+model Stock {
+  code      Int     @id @default(autoincrement())
+  stockname String  @unique
+  market    String  @unique
+}
