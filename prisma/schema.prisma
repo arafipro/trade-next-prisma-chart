@@ -11,16 +11,17 @@ datasource db {
 }
 
 model Stock {
-  code      Int     @id @default(autoincrement())
+  code      Int     @id
   stockname String  @unique
   market    String  @unique
   trades    Trade[]
 }
 
 model Trade {
-  id        Int   @id @default(autoincrement())
-  price     Int
-  shares    Float
-  stock     Stock @relation(fields: [stockCode], references: [code])
-  stockCode Int
+  id          Int      @id @default(autoincrement())
+  price       Int
+  shares      Float
+  tradingDate DateTime
+  stock       Stock    @relation(fields: [stockCode], references: [code])
+  stockCode   Int
 }
