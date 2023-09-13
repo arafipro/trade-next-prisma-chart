@@ -8,14 +8,12 @@ CREATE TABLE "Stock" (
 -- CreateTable
 CREATE TABLE "Trade" (
     "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-    "price" INTEGER NOT NULL,
-    "shares" REAL NOT NULL,
+    "price" REAL NOT NULL,
+    "shares" INTEGER NOT NULL,
+    "tradingDate" TEXT NOT NULL,
     "stockCode" INTEGER NOT NULL,
     CONSTRAINT "Trade_stockCode_fkey" FOREIGN KEY ("stockCode") REFERENCES "Stock" ("code") ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Stock_stockname_key" ON "Stock"("stockname");
-
--- CreateIndex
-CREATE UNIQUE INDEX "Stock_market_key" ON "Stock"("market");

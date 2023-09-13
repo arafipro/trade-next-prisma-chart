@@ -4,20 +4,6 @@ const prisma = new PrismaClient();
 
 const stockData: Prisma.StockCreateInput[] = [
   {
-    code: 1000,
-    stockname: "A社",
-    market: "プライム",
-    trades: {
-      create: [
-        {
-          price: 100,
-          shares: 100,
-          tradingDate: "20230131",
-        },
-      ],
-    },
-  },
-  {
     code: 2802,
     stockname: "味の素",
     market: "プライム",
