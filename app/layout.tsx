@@ -1,3 +1,4 @@
+import HeadNavBar from "@/components/HeadNavBar";
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
@@ -22,12 +23,10 @@ export default function RootLayout({
   return (
     <html lang="ja" className={notosanjp.className}>
       <body className="flex w-screen bg-gray-100 overflow-x-hidden scroll-smooth">
-        <div className="fixed bg-white h-16 w-full items-center z-50 border-b">
-          HeadNavBar
-        </div>
+        <HeadNavBar />
         <div className="w-full">
-          <div className="fixed min-h-screen w-72 border-r bg-slate-200">
-            <p className="mt-20">SideNavBar</p>
+          <div className="fixed min-h-screen w-72 border-r bg-slate-200 mt-16">
+            SideNavBar
           </div>
           <div className="mt-16 ml-72 mr-2">{children}</div>
         </div>
