@@ -1,4 +1,5 @@
 import HeadNavBar from "@/components/HeadNavBar";
+import SideNavBar from "@/components/SideNavBar";
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
@@ -25,9 +26,7 @@ export default function RootLayout({
       <body className="flex w-screen bg-gray-100 overflow-x-hidden scroll-smooth">
         <HeadNavBar />
         <div className="w-full">
-          <div className="fixed min-h-screen w-72 border-r bg-slate-200 mt-16">
-            SideNavBar
-          </div>
+          <SideNavBar />
           <div className="mt-16 ml-72 mr-2">{children}</div>
         </div>
       </body>
