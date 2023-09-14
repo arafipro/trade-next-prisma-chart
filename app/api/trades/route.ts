@@ -8,6 +8,9 @@ export async function GET() {
       orderBy: {
         tradingDate: "asc",
       },
+      include: {
+        stock: true,
+      },
     });
     return NextResponse.json({ trades }, { status: 200 });
   } catch (error: any) {
