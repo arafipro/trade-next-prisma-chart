@@ -1,0 +1,39 @@
+import { Stock } from "@prisma/client";
+
+export default async function Page() {
+  const res = await fetch("http://localhost:3000/api/stocks", {
+    cache: "no-cache",
+  });
+  const resData = await res.json();
+  const stocks: Stock[] = resData.stocks;
+  return (
+    <main className="p-0.5">
+      <div className="overflow-hidden rounded-lg border border-gray-200 shadow-md m-5">
+        <table className="w-full border-collapse bg-white text-left text-gray-500">
+          <thead className="bg-gray-50 text-sm">
+            <tr>
+              <th scope="col" className="pl-6 py-4 font-medium text-gray-900">
+                証券コード
+              </th>
+              <th scope="col" className="pl-6 py-4 font-medium text-gray-900">
+                銘柄名
+              </th>
+              <th scope="col" className="pl-6 py-4 font-medium text-gray-900">
+                銘柄名
+              </th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-100 border-t border-gray-100 text-sm">
+            {stocks.map((stock) => (
+              <tr key={stock.code} className="hover:bg-gray-50">
+                <td className="pl-6 py-4">{stock.code}</td>
+                <td className="pl-6 py-4">{stock.stockname}</td>
+                <td className="pl-6 py-4">{stock.market}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </main>
+  );
+}
