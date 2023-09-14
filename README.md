@@ -12,7 +12,7 @@ Prismaを使用してデータベースに接続してNext.jsでCRUDを実現す
 ## 使用ライブラリ
 
 - [Prisma](https://www.prisma.io/)
-- [CanvasJS](https://canvasjs.com/docs/charts/basics-of-creating-html5-chart/)
+- [Chart.js](https://www.chartjs.org/docs/latest/)
 
 ## 目標
 
