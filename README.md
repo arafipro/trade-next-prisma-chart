@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 日本株取引記録(trade-next-prisma)
 
-## Getting Started
+## 目的
 
-First, run the development server:
+Prismaを使用してデータベースに接続してNext.jsでCRUDを実現する
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## 使用フレームワーク
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Next.js v13.4.8](https://nextjs.org/docs)
+- [Tailwind CSS v3.3.3](https://tailwindcss.com/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 使用ライブラリ
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Prisma](https://www.prisma.io/)
+- [CanvasJS](https://canvasjs.com/docs/charts/basics-of-creating-html5-chart/)
 
-## Learn More
+## 目標
 
-To learn more about Next.js, take a look at the following resources:
+- Next.jsのApp Routerの理解
+- Prismaの理解
+- CanvasJSの理解
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 参考資料
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Tailwind cheatsheet](https://tailwindcomponents.com/cheatsheet/)
+- [tradeでリレーションしたstockのデータを表示](https://zenn.dev/sendokakeru/articles/4d8d9b97d6c1ad)
+- [seedからデータベースに登録](https://www.prisma.io/docs/guides/migrate/seed-database#seeding-your-database-with-typescript-or-javascript)
