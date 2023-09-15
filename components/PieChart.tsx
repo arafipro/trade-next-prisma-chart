@@ -19,7 +19,7 @@ const options: ChartOptions<"pie"> = {
   plugins: {
     title: {
       display: true,
-      text: "Text Pie Chart",
+      text: "Test Pie Chart by Chart.js",
       font: {
         size: 32,
       },
@@ -32,7 +32,7 @@ const data = {
   datasets: [
     {
       label: "My First Dataset",
-      data: [300, 50, 100],
+      data: [600, 100, 300],
       backgroundColor: [
         "rgb(255, 99, 132)",
         "rgb(54, 162, 235)",

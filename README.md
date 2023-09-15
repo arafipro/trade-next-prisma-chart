@@ -14,6 +14,8 @@ Prismaを使用してデータベースに接続してNext.jsでCRUDを実現す
 - [Prisma](https://www.prisma.io/)
 - [Chart.js](https://www.chartjs.org/docs/latest/)
 - [react-chartjs-2](https://react-chartjs-2.js.org/)
+- [Plotly](https://plotly.com/javascript/)
+- [React Plotly](https://plotly.com/javascript/react/)
 
 ## 目標
 
@@ -35,3 +37,6 @@ Prismaを使用してデータベースに接続してNext.jsでCRUDを実現す
 ### Chart.js
 
 - [Next.js+TypeScript+Chart.js](https://zenn.dev/nihashi/articles/1f8a1f828554af)
+### Plotly
+
+- [React + TypeScript + Plotly で3次元グラフ](https://qiita.com/aktr996/items/f3483c9fc17cf0ad3c10)
