@@ -1,11 +1,18 @@
-import { Stock } from "@prisma/client";
+"use client";
 
-export default async function Page() {
-  const res = await fetch("http://localhost:3000/api/stocks", {
-    cache: "no-cache",
-  });
-  const resData = await res.json();
-  const stocks: Stock[] = resData.stocks;
+import { getAllStocks } from "@/lib/stockApi";
+import { Stock } from "@prisma/client";
+import { useEffect, useState } from "react";
+
+export default function Page() {
+  const [stocks, setStocks] = useState<Stock[]>([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const stocks: Stock[] = await getAllStocks();
+      setStocks(stocks);
+    };
+    fetchData();
+  }, []);
   return (
     <main className="p-0.5">
       <div className="overflow-hidden rounded-lg border border-gray-200 shadow-md m-5">
