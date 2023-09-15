@@ -5,7 +5,8 @@ export default function Layout(props: {
   rightBottom: React.ReactNode;
 }) {
   return (
-    <div>
+		<div>
+			<h2 className="text-center text-3xl">サンプルチャート</h2>
       <div className="flex">
         {props.leftTop}
         {props.rightTop}

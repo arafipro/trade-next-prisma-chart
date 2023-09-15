@@ -14,7 +14,11 @@ const data: Partial<PlotData> = {
 const layout: Partial<Layout> = {
   height: 800,
   width: 800,
-  title: { text: "Test Pie Chart by Plotly", font: { size: 30 } },
+  title: {
+    text: "Test Pie Chart by Plotly",
+    font: { size: 30, family: "Noto Sans JP" },
+  },
+  font: { family: "Noto Sans JP" },
 };
 
 export default function PieChartPlotly() {
