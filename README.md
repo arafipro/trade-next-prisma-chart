@@ -9,6 +9,10 @@ Prismaを使用してデータベースに接続してNext.jsでCRUDを実現す
 - [Next.js v13.4](https://nextjs.org/docs)
 - [Tailwind CSS](https://tailwindcss.com/)
 
+## 使用データベース
+
+- [Vercel Postgres](https://vercel.com/dashboard/stores)
+
 ## 使用ライブラリ
 
 - [Prisma](https://www.prisma.io/)
@@ -17,11 +21,18 @@ Prismaを使用してデータベースに接続してNext.jsでCRUDを実現す
 - [Plotly](https://plotly.com/javascript/)
 - [React Plotly](https://plotly.com/javascript/react/)
 
+## 使用サービス
+
+- [Vercel](https://vercel.com/dashboard)
+
 ## 目標
 
 - Next.jsのApp RouterでのParallel Routesの理解
 - Prismaの理解
 - Chart.jsの理解
+- Plotlyの理解
+- Vercel Postgresの理解
+- Vercelへのデプロイ
 
 ## 参考資料
 
@@ -38,7 +49,13 @@ Prismaを使用してデータベースに接続してNext.jsでCRUDを実現す
 ### Chart.js
 
 - [Next.js+TypeScript+Chart.js](https://zenn.dev/nihashi/articles/1f8a1f828554af)
+
 ### Plotly
 
 - [React + TypeScript + Plotly で3次元グラフ](https://qiita.com/aktr996/items/f3483c9fc17cf0ad3c10)
 - [Next.js plotly Build](https://github.com/plotly/react-plotly.js/issues/272#issuecomment-1328283528)
+
+### Vercel Postgres
+
+- [Next.js × NextAuth × Prisma × VercelPostgresで構築するモダン認証機能システム](https://zenn.dev/arsaga/articles/3f5bce7c904ebe)
+- [Integrated seeding with Prisma Migrate](https://www.prisma.io/docs/guides/migrate/seed-database#integrated-seeding-with-prisma-migrate)
