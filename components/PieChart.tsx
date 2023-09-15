@@ -21,7 +21,8 @@ const options: ChartOptions<"pie"> = {
       display: true,
       text: "Test Pie Chart by Chart.js",
       font: {
-        size: 32,
+				size: 32,
+				family:"Noto Sans JP"
       },
     },
   },
