@@ -1,4 +1,4 @@
-const BaseUrl = "http://localhost:3000/api/stocks";
+const BaseUrl = "/api/stocks";
 
 export async function getAllStocks() {
   const res = await fetch(`${BaseUrl}`, {
