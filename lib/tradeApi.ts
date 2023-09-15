@@ -1,4 +1,4 @@
-const BaseUrl = "http://localhost:3000/api/trades";
+const BaseUrl = "/api/trades";
 
 export async function getAllTrades() {
   const res = await fetch(`${BaseUrl}`, {
