@@ -1,8 +1,10 @@
 // Plotly
 "use client";
 
+import dynamic from "next/dynamic";
 import { Layout, PlotData } from "plotly.js";
-import Plot from "react-plotly.js";
+// ビルド時のエラーを回避するために追加
+const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 
 const data: Partial<PlotData> = {
   values: [100, 300, 600],

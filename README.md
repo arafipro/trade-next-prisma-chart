@@ -33,6 +33,7 @@ Prismaを使用してデータベースに接続してNext.jsでCRUDを実現す
 
 - [tradeでリレーションしたstockのデータを表示](https://zenn.dev/sendokakeru/articles/4d8d9b97d6c1ad)
 - [seedからデータベースに登録](https://www.prisma.io/docs/guides/migrate/seed-database#seeding-your-database-with-typescript-or-javascript)
+- [Vercel build dependency](https://www.prisma.io/docs/guides/other/troubleshooting-orm/help-articles/vercel-caching-issue)
 
 ### Chart.js
 
@@ -40,3 +41,4 @@ Prismaを使用してデータベースに接続してNext.jsでCRUDを実現す
 ### Plotly
 
 - [React + TypeScript + Plotly で3次元グラフ](https://qiita.com/aktr996/items/f3483c9fc17cf0ad3c10)
+- [Next.js plotly Build](https://github.com/plotly/react-plotly.js/issues/272#issuecomment-1328283528)
