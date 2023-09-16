@@ -1,22 +1,12 @@
-"use client";
-
 import { getAllTrades } from "@/lib/tradeApi";
 import { Stock, Trade } from "@prisma/client";
-import { useEffect, useState } from "react";
 
 type TradeInStock = Trade & {
   stock: Stock;
 };
 
-export default function Page() {
-  const [trades, setTrades] = useState<TradeInStock[]>([]);
-  useEffect(() => {
-    const fetchData = async () => {
-      const trades: TradeInStock[] = await getAllTrades();
-      setTrades(trades);
-    };
-    fetchData();
-  }, []);
+export default async function Page() {
+  const trades: TradeInStock[] = await getAllTrades();
   return (
     <main className="p-0.5">
       <div className="overflow-hidden rounded-lg border border-gray-200 shadow-md m-5">
