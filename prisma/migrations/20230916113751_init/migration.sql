@@ -12,7 +12,7 @@ CREATE TABLE "Trade" (
     "id" SERIAL NOT NULL,
     "price" DOUBLE PRECISION NOT NULL,
     "shares" INTEGER NOT NULL,
-    "tradingDate" TEXT NOT NULL,
+    "tradingDate" DATE NOT NULL,
     "stockCode" INTEGER NOT NULL,
 
     CONSTRAINT "Trade_pkey" PRIMARY KEY ("id")

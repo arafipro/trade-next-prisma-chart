@@ -59,3 +59,4 @@ Prismaを使用してデータベースに接続してNext.jsでCRUDを実現す
 
 - [Next.js × NextAuth × Prisma × VercelPostgresで構築するモダン認証機能システム](https://zenn.dev/arsaga/articles/3f5bce7c904ebe)
 - [Integrated seeding with Prisma Migrate](https://www.prisma.io/docs/guides/migrate/seed-database#integrated-seeding-with-prisma-migrate)
+- [JavaScriptで日付をYYYY-MM-DD形式で得るコード](https://www.ey-office.com/blog_archive/2023/04/18/short-code-to-get-todays-date-in-yyyy-mm-dd-format-in-javascript/)
