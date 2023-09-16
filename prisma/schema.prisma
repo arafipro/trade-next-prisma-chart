@@ -6,10 +6,10 @@ generator client {
 }
 
 datasource db {
-  provider  = "postgresql"
-  url       = env("POSTGRES_PRISMA_URL") // uses connection pooling
-  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
-	shadowDatabaseUrl = env("POSTGRES_URL_NON_POOLING") // used for migrations
+  provider          = "postgresql"
+  url               = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl         = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+  shadowDatabaseUrl = env("POSTGRES_URL_NON_POOLING") // used for migrations
 }
 
 model Stock {
@@ -20,10 +20,10 @@ model Stock {
 }
 
 model Trade {
-  id          Int    @id @default(autoincrement())
+  id          Int      @id @default(autoincrement())
   price       Float
   shares      Int
-  tradingDate String
-  stock       Stock  @relation(fields: [stockCode], references: [code])
+  tradingDate DateTime @db.Date
+  stock       Stock    @relation(fields: [stockCode], references: [code])
   stockCode   Int
 }
