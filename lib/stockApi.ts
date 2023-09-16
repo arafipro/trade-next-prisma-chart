@@ -1,9 +1,6 @@
-const BaseUrl = "/api/stocks";
+import prisma from "@/lib/prisma";
 
 export async function getAllStocks() {
-  const res = await fetch(`${BaseUrl}`, {
-    next: { revalidate: 10 },
-  });
-  const resData = await res.json();
-  return resData.stocks;
+  const stocks = await prisma.stock.findMany();
+  return stocks;
 }
