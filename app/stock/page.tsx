@@ -1,18 +1,8 @@
-"use client";
-
 import { getAllStocks } from "@/lib/stockApi";
 import { Stock } from "@prisma/client";
-import { useEffect, useState } from "react";
 
-export default function Page() {
-  const [stocks, setStocks] = useState<Stock[]>([]);
-  useEffect(() => {
-    const fetchData = async () => {
-      const stocks: Stock[] = await getAllStocks();
-      setStocks(stocks);
-    };
-    fetchData();
-  }, []);
+export default async function Page() {
+  const stocks: Stock[] = await getAllStocks();
   return (
     <main className="p-0.5">
       <div className="overflow-hidden rounded-lg border border-gray-200 shadow-md m-5">
