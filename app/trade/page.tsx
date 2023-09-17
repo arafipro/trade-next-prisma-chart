@@ -39,8 +39,8 @@ export default async function Page() {
           <tbody className="divide-y divide-gray-100 border-t border-gray-100 text-sm">
             {trades.map((trade) => (
               <tr key={trade.id} className="hover:bg-gray-50">
-								<td className="pl-6 py-4">
-									{/* DATE型から書式変更 */}
+                <td className="pl-6 py-4">
+                  {/* DATE型から書式変更 */}
                   {trade.tradingDate.toLocaleDateString("ja-JP", {
                     year: "numeric",
                     month: "2-digit",
