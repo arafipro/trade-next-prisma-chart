@@ -2,6 +2,7 @@ import { getAllTrades } from "@/lib/tradeApi";
 import { Stock, Trade } from "@prisma/client";
 
 type TradeInStock = Trade & {
+  tradePrice: number;
   stock: Stock;
 };
 
@@ -52,7 +53,9 @@ export default async function Page() {
                 <td className="pl-6 py-4">{trade.stock.market}</td>
                 <td className="pl-6 py-4">{trade.shares}株</td>
                 <td className="pl-6 py-4">{trade.price}円</td>
-                <td className="pl-6 py-4">{trade.shares * trade.price}円</td>
+                <td className="pl-6 py-4">
+                  {trade.tradePrice /* = trade.shares * trade.price */}円
+                </td>
               </tr>
             ))}
           </tbody>
