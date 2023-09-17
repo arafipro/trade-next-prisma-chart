@@ -1,7 +1,7 @@
-import prisma from "@/lib/prisma";
+import { prismaTrade } from "./prisma";
 
 export async function getAllTrades() {
-  const trades = await prisma.trade.findMany({
+  const trades = await prismaTrade.trade.findMany({
     orderBy: {
       tradingDate: "asc",
     },
