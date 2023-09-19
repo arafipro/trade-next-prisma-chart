@@ -1,4 +1,4 @@
-import { getAllTrades } from "@/lib/tradeApi";
+import { getAllTrades } from "@/lib/tradeQuery";
 import { Stock, Trade } from "@prisma/client";
 
 type TradeInStock = Trade & {
