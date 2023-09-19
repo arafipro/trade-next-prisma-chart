@@ -1,4 +1,4 @@
-import { getAllStocks } from "@/lib/stockApi";
+import { getAllStocks } from "@/lib/stockQuery";
 import { Stock } from "@prisma/client";
 
 export default async function Page() {

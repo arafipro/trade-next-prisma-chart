@@ -1,5 +1,5 @@
-import { getStock } from "./stockApi";
-import { getStockAllCodes, getTotalPriceByCode } from "./tradeApi";
+import { getStock } from "./stockQuery";
+import { getStockAllCodes, getTotalPriceByCode } from "./tradeQuery";
 
 export async function getValues() {
   const codes: number[] = [];
