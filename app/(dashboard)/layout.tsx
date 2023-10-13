@@ -5,16 +5,16 @@ export default function Layout(props: {
   rightBottom: React.ReactNode;
 }) {
   return (
-		<div>
-			<h2 className="text-center text-3xl">サンプルチャート</h2>
+		<div className="p-4">
+			{/* <h2 className="text-center text-3xl">サンプルチャート</h2> */}
       <div className="flex">
         {props.leftTop}
         {props.rightTop}
       </div>
-      <div className="flex">
+      {/* <div className="flex">
         {props.leftBottom}
         {props.rightBottom}
-      </div>
+      </div> */}
     </div>
   );
 }
