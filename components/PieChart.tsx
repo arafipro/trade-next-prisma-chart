@@ -21,7 +21,7 @@ const options: ChartOptions<"pie"> = {
   plugins: {
     title: {
       display: true,
-      text: "Test Pie Chart by Chart.js",
+      text: "銘柄別投資額割合 Chart.js",
       font: {
         size: 32,
         family: "Noto Sans JP",
@@ -30,26 +30,51 @@ const options: ChartOptions<"pie"> = {
   },
 };
 
-const data = {
-  labels: ["Red", "Blue", "Yellow"],
-  datasets: [
-    {
-      label: "My First Dataset",
-      data: [600, 100, 300],
-      backgroundColor: [
-        "rgb(255, 99, 132)",
-        "rgb(54, 162, 235)",
-        "rgb(255, 205, 86)",
-      ],
-      hoverOffset: 4,
-    },
-  ],
-};
+// const data = {
+//   labels: ["Red", "Blue", "Yellow"],
+//   datasets: [
+//     {
+//       label: "My First Dataset",
+//       data: [600, 100, 300],
+//       backgroundColor: [
+//         "rgb(255, 99, 132)",
+//         "rgb(54, 162, 235)",
+//         "rgb(255, 205, 86)",
+//       ],
+//       hoverOffset: 4,
+//     },
+//   ],
+// };
 
-export default function PieChart() {
+export default function PieChart({
+  values,
+  labels,
+}: {
+  values: number[];
+  labels: string[];
+}) {
   return (
     <div className="bg-white m-4 p-2 w-full">
-      <Pie data={data} options={options} width={800} height={800} />
+      <Pie
+        data={{
+          labels: labels,
+          datasets: [
+            {
+              label: "My First Dataset",
+              data: values,
+              backgroundColor: [
+                "rgb(255, 99, 132)",
+                "rgb(54, 162, 235)",
+                "rgb(255, 205, 86)",
+              ],
+              hoverOffset: 4,
+            },
+          ],
+        }}
+        options={options}
+        width={800}
+        height={800}
+      />
     </div>
   );
 }
