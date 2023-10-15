@@ -17,7 +17,7 @@ const layout: Partial<Layout> = {
   height: 800,
   width: 800,
   title: {
-    text: "銘柄別投資額割合",
+    text: "銘柄別投資額割合 Plotly",
     font: {
       size: 30,
       family: "Noto Sans JP",
