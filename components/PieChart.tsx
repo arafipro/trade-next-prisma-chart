@@ -16,13 +16,15 @@ import { Pie } from "react-chartjs-2";
 ChartJS.register(ArcElement, Legend, Title, Tooltip);
 
 const options: ChartOptions<"pie"> = {
+  responsive: true,
+  maintainAspectRatio: false,
   plugins: {
     title: {
       display: true,
       text: "Test Pie Chart by Chart.js",
       font: {
-				size: 32,
-				family:"Noto Sans JP"
+        size: 32,
+        family: "Noto Sans JP",
       },
     },
   },
@@ -47,7 +49,7 @@ const data = {
 export default function PieChart() {
   return (
     <div className="bg-white m-4 p-2 w-full">
-      <Pie data={data} options={options} />
+      <Pie data={data} options={options} width={800} height={800} />
     </div>
   );
 }
