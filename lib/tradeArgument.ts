@@ -16,5 +16,9 @@ export async function getValues() {
       tradePrices.push(resPrice);
     })
   );
-  return [codes, stocknames, tradePrices];
+  return {
+    codes: codes,
+    stocknames: stocknames,
+    tradePrices: tradePrices,
+  };
 }

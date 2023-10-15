@@ -33,8 +33,8 @@ export default function PieChartPlotly({
   values,
   labels,
 }: {
-  values: number[] | string[];
-  labels: number[] | string[];
+  values: number[];
+  labels: string[];
 }) {
   return (
     <div>
