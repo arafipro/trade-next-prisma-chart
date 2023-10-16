@@ -2,8 +2,8 @@
 
 ## 目的
 
-Prismaを使用してデータベースに接続してNext.jsでCRUDを実現する
-Chart.jsやPlotlyを使用してチャートを表示する
+- Prismaを使用してデータベースに接続してNext.jsでCRUDを実現する  
+- Chart.jsやPlotlyを使用してチャートを表示する
 
 ## デプロイ先
 
